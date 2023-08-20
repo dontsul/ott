@@ -1,0 +1,315 @@
+.rate {
+  padding: 45px 0 33px 0;
+  display: flex;
+  flex-direction: column;
+
+  &__card {
+    position: relative;
+    width: 100%;
+    &__blur {
+      background: #000;
+      position: absolute;
+      width: 66px;
+      height: 3px;
+      top: -3px;
+      left: 50%;
+      transform: translateX(-50%);
+      display: inline-block;
+    }
+    &__eye-line {
+      position: absolute;
+      z-index: 2;
+      top: -34px;
+      left: 50%;
+      transform: translateX(-50%);
+      display: inline-block;
+      // background-color: #000;
+    }
+
+    border-radius: 20px;
+    border: 2.4px solid var(--primary-color);
+
+    display: flex;
+    flex-direction: column;
+    z-index: 2;
+    padding: 50px 16px 32px 16px;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    grid-template-areas:
+      "price"
+      "description"
+      "list"
+      "form";
+
+    &__price {
+      display: flex;
+      align-items: flex-end;
+      justify-content: center;
+      margin-bottom: 24px;
+      grid-area: price;
+    }
+    &__price span:first-child {
+      color: var(--primary-color);
+      font-size: 67px;
+      font-style: normal;
+      font-weight: 600;
+      // line-height: 67px; /* 100% */
+      line-height: 0.8;
+    }
+    &__price span:last-child {
+      color: var(--text);
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 16px; /* 100% */
+      text-transform: uppercase;
+      opacity: 0.8;
+    }
+
+    &__description {
+      width: 70%;
+      margin: 0 auto;
+      text-align: center;
+      margin-bottom: 24px;
+      color: var(--text);
+      font-size: 15px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 140%; /* 21px */
+      opacity: 0.8;
+      grid-area: description;
+    }
+
+    &__list {
+      grid-area: list;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+      width: 82%;
+      margin: 0 auto 32px auto;
+
+      &__item {
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        margin-bottom: 16px;
+      }
+      &__item span {
+        color: var(--text);
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        letter-spacing: 0.3px;
+      }
+      &__item:last-child {
+        margin-bottom: 0;
+      }
+      &__item img {
+        margin-right: 16px;
+      }
+    }
+
+    &__form {
+      grid-area: form;
+      display: grid;
+      grid-template-columns: 1fr;
+      &__input {
+        border-radius: 5px;
+        border: 1px solid #d0d0d1;
+        opacity: 0.9;
+        background: var(--text);
+        padding: 15px 16px;
+        width: 100%;
+        margin-bottom: 16px;
+      }
+      &__input::placeholder {
+        color: var(rgba(60, 60, 67, 0.6));
+        font-feature-settings: "clig" off, "liga" off;
+        font-family: Inter;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 23px; /* 153.333% */
+        letter-spacing: 0.15px;
+        opacity: 0.9;
+      }
+
+      &__btn {
+        border-radius: 5px;
+        background-color: var(--primary-color);
+        padding: 16px;
+        width: 100%;
+        color: var(--text);
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+      }
+    }
+  }
+}
+
+@media (min-width: 375px) {
+  .rate {
+    padding: 50px 0 24px 0;
+    &__circle {
+      width: 89px;
+      height: 86px;
+    }
+    &__eye {
+      height: 72px;
+      width: 93px;
+    }
+
+    &__eye img {
+      width: 44px;
+      height: 55px;
+    }
+    &__card {
+      padding: 54px 24px 40px 24px;
+
+      &__description {
+        margin-bottom: 34.5px;
+        font-size: 16px;
+      }
+
+      &__list {
+        width: 73%;
+
+        &__item {
+          margin-bottom: 18px;
+        }
+        &__item span {
+          font-size: 16px;
+          letter-spacing: 0.32px;
+        }
+        &__item:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+}
+@media (min-width: 768px) {
+  .rate {
+    padding: 55px 0 50px 0;
+    &__circle {
+      width: 89px;
+      height: 99px;
+    }
+    &__eye {
+      height: 72px;
+      width: 93px;
+    }
+
+    &__eye img {
+      width: 46px;
+      height: 58px;
+    }
+    &__card {
+      padding: 58px 86.5px 42px 75.5px;
+      grid-template-columns: 1fr 1fr;
+      grid-template-areas:
+        "price list"
+        "description list"
+        "form form";
+
+      &__description {
+        margin-bottom: 34.5px;
+        font-size: 16px;
+        width: 90%;
+      }
+
+      &__list {
+        width: 73%;
+        margin-bottom: 42.5px;
+
+        &__item {
+          margin-bottom: 18px;
+        }
+        &__item:last-child {
+          margin-bottom: 0;
+        }
+      }
+      &__form {
+        grid-template-columns: 57.5% 1fr;
+        &__input {
+          margin-bottom: 0px;
+          border-top-right-radius: 0px;
+          border-bottom-right-radius: 0px;
+        }
+        &__btn {
+          border-top-left-radius: 0px;
+          border-bottom-left-radius: 0px;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 990px) {
+  .rate {
+    padding: 80px 38.5px 56px 38.5px;
+
+    &__card {
+      padding: 58px 130px 66px 119px;
+
+      &__list {
+        width: 100%;
+        margin-bottom: 41px;
+
+        &__item {
+          margin-bottom: 20px;
+        }
+        &__item:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+}
+@media (min-width: 1440px) {
+  .rate {
+    padding: 80px 122.5px 56px 122.5px;
+    &__eye {
+      height: 72px;
+      width: 93px;
+    }
+
+    &__eye img {
+      width: 54px;
+      height: 68px;
+    }
+    &__card {
+      padding: 62px 143px 64px 149px;
+    }
+  }
+}
+@media (min-width: 1920px) {
+  .rate {
+    padding: 100px 174px 80px 174px;
+    &__circle {
+      width: 118px;
+      height: 100px;
+    }
+    &__eye {
+      height: 100%;
+      width: 116px;
+    }
+
+    &__eye img {
+      width: 72px;
+      height: 90px;
+    }
+    &__card {
+      padding: 68px 226px 96px 195px;
+      max-width: 1150px;
+      width: 100%;
+      margin: 0 auto;
+    }
+  }
+}

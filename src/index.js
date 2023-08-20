@@ -1,0 +1,9 @@
+import "./styles/reset.scss";
+import "./styles/main.scss";
+import "./styles/header.scss";
+import "./styles/about.scss";
+import "./styles/rate.scss";
+import "./styles/channels.scss";
+import "./styles/devices.scss";
+import "./styles/faq.scss";
+import "./styles/footer.scss";

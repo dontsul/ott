@@ -1,0 +1,129 @@
+.about {
+  display: none;
+  padding: 24px 0 41px 0;
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+
+    &__item {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      flex-direction: column;
+    }
+    &__item img {
+      margin-bottom: 12px;
+      width: 48px;
+      height: 48px;
+    }
+    &__item h6 {
+      color: var(--text-secondary);
+      text-align: center;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 24px; /* 150% */
+      margin-bottom: 0;
+    }
+    &__item p {
+      text-align: start;
+      display: none;
+      color: var(--text);
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 150%; /* 24px */
+      opacity: 0.8;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .about {
+    display: block;
+  }
+}
+
+@media (min-width: 990px) {
+  .about {
+    padding: 32px 0;
+    &__list {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 24px;
+
+      &__item {
+        align-items: start;
+      }
+      &__item img {
+        margin-bottom: 20px;
+        width: 64px;
+        height: 64px;
+      }
+      &__item h6 {
+        text-align: start;
+        margin-bottom: 16px;
+        line-height: 18px;
+      }
+      &__item p {
+        display: block;
+      }
+    }
+  }
+}
+@media (min-width: 1440px) {
+  .about {
+    padding: 48px 0 56px 0;
+    &__list {
+      gap: 32px;
+
+      &__item img {
+        margin-bottom: 24px;
+        width: 72px;
+        height: 72px;
+      }
+      &__item h6 {
+        font-size: 18px;
+        text-align: start;
+        margin-bottom: 16px;
+        line-height: 18px;
+      }
+    }
+  }
+}
+@media (min-width: 1920px) {
+  .about {
+    padding: 60px 0 80px 0;
+    &__list {
+      &__item img {
+        margin-bottom: 32px;
+        width: 96px;
+        height: 96px;
+      }
+      &__item h6 {
+        text-align: start;
+        margin-bottom: 16px;
+        font-size: 24px;
+        line-height: 24px;
+      }
+      &__item p {
+        font-size: 20px;
+      }
+    }
+  }
+}
+
+// @media (min-width: 375px) {
+//   .about {
+//   }
+// }
+// @media (min-width: 768px) {
+// }
+
+// @media (min-width: 990px) {
+// }
+// @media (min-width: 1440px) {
+// }
+// @media (min-width: 1920px) {
+// }

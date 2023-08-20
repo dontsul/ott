@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Title</title>
+  </head>
+  <body>
+    <header class="header container">
+      <div class="header__auth">
+        <a class="header__auth__logo" href="#">
+          <picture>
+            <source
+              media="(min-width:1920px)"
+              srcset="./images/header/logo-1920.png"
+            />
+            <source
+              media="(min-width:990px)"
+              srcset="./images/header/logo-990.png"
+            />
+            <source
+              media="(min-width:768px)"
+              srcset="./images/header/logo-768.png"
+            />
+            <img
+              class="header__content__banner__image"
+              src="./images/header/logo-320.png"
+              alt="logo"
+            />
+          </picture>
+        </a>
+        <div class="header__auth__btns">
+          <div class="header__auth__btns__social">
+            <a href="#"
+              ><img src="./images/header/facebook.svg" alt="facebook"
+            /></a>
+            <a href="#"
+              ><img src="./images/header/telegram.svg" alt="telegram"
+            /></a>
+          </div>
+          <button class="header__auth__btns__reg">Регистрация</button>
+          <button class="header__auth__btns__login">Войти</button>
+        </div>
+      </div>
+      <div class="header__content">
+        <h1 class="header__content__title">
+          Более 270 телеканалов прямом эфире
+        </h1>
+        <div class="header__content__banner">
+          <picture>
+            <source
+              media="(min-width:1920px)"
+              srcset="./images/header/banner-1920.png"
+            />
+
+            <source
+              media="(min-width:1440px)"
+              srcset="./images/header/banner-1440.png"
+            />
+
+            <source
+              media="(min-width:990px)"
+              srcset="./images/header/banner-990.png"
+            />
+
+            <source
+              media="(min-width:768px)"
+              srcset="./images/header/banner-768.png"
+            />
+
+            <source
+              media="(min-width:375px)"
+              srcset="./images/header/banner-375.png"
+            />
+
+            <img
+              class="header__content__banner__image"
+              src="./images/header/banner-320.png"
+              alt="banner"
+            />
+          </picture>
+        </div>
+        <p class="header__content__description">
+          Национальные, познавательные, детские, кино, спортивные, новостные и
+          многие другие каналы
+        </p>
+        <button class="header__content__cta-button">
+          Протестировать 7 дней бесплатно
+        </button>
+      </div>
+    </header>
+    <main class="container">
+      <section class="about">
+        <ul class="about__list">
+          <li class="about__list__item">
+            <img src="./images/about/gift.svg" alt="gift" />
+            <h6>Бесплатный тест</h6>
+            <p>7 дней бесплатного тестового просмотра</p>
+          </li>
+          <li class="about__list__item">
+            <img src="./images/about/device.svg" alt="device" />
+            <h6>5 устройств = 1 подписка</h6>
+            <p>Подключайте 5 устройств в одной подписке</p>
+          </li>
+          <li class="about__list__item">
+            <img src="./images/about/tv.svg" alt="" />
+            <h6>Архив трансляций</h6>
+            <p>Смотрите 7 дней телеэфира в записи</p>
+          </li>
+          <li class="about__list__item">
+            <img src="./images/about/earth.svg" alt="earth" />
+            <h6>Без привязки к месту</h6>
+            <p>Смотрите любимые фильмы и передачи в любой точке мира</p>
+          </li>
+        </ul>
+      </section>
+      <section class="rate">
+        <div class="rate__card">
+          <div class="rate__card__eye-line">
+            <img src="./images/rate/group.png" alt="eye" />
+          </div>
+          <div class="rate__card__blur"></div>
+
+          <div class="rate__card__price">
+            <span>1€</span> <span>/ МЕСЯЦ</span>
+          </div>
+          <p class="rate__card__description">
+            Покупая подписку более, чем на 6 месяцев
+          </p>
+          <ul class="rate__card__list">
+            <li class="rate__card__list__item">
+              <img src="./images/rate/ok.svg" alt="ok" />
+              <span>Более 270 каналов</span>
+            </li>
+            <li class="rate__card__list__item">
+              <img src="./images/rate/ok.svg" alt="ok" />
+              <span>127 FullHD каналов</span>
+            </li>
+            <li class="rate__card__list__item">
+              <img src="./images/rate/ok.svg" alt="ok" />
+              <span>Режим Ultra TV Sport</span>
+            </li>
+            <li class="rate__card__list__item">
+              <img src="./images/rate/ok.svg" alt="ok" />
+              <span>7 дней архива каналов</span>
+            </li>
+            <li class="rate__card__list__item">
+              <img src="./images/rate/ok.svg" alt="ok" />
+              <span>5 устройств = 1 подписка</span>
+            </li>
+          </ul>
+          <form action="" class="rate__card__form">
+            <input
+              type="text"
+              name="email"
+              placeholder="Email"
+              class="rate__card__form__input"
+            />
+            <button class="rate__card__form__btn">Подключить тариф</button>
+          </form>
+        </div>
+      </section>
+      <section class="channels">
+        <h2 class="channels__title">ТВ - каналы</h2>
+        <p class="channels__description">
+          Национальные, познавательные, детские, кино, спортивные, новостные и
+          многие другие телеканалы
+        </p>
+        <ul class="channels__list-category">
+          <li class="channels__list-category__item active">Популярные</li>
+          <li class="channels__list-category__item">Национальные</li>
+          <li class="channels__list-category__item">Познавательные</li>
+          <li class="channels__list-category__item">Кино</li>
+          <li class="channels__list-category__item">Спорт</li>
+          <li class="channels__list-category__item">Детские</li>
+          <li class="channels__list-category__item">Музыкальные</li>
+          <li class="channels__list-category__item">Новостные</li>
+        </ul>
+        <ul class="channels__list-cannels">
+          <li class="channels__list-cannels__item">
+            <img src="./images/channels/1+1.png" alt="1+1" />
+          </li>
+          <li class="channels__list-cannels__item">
+            <img src="./images/channels/zoom.png" alt="zoom" />
+          </li>
+          <li class="channels__list-cannels__item">
+            <img src="./images/channels/ukraine.png" alt="ukraine" />
+          </li>
+          <li class="channels__list-cannels__item">
+            <img src="./images/channels/film.png" alt="film" />
+          </li>
+          <li class="channels__list-cannels__item">
+            <img src="./images/channels/tet.png" alt="tet" />
+          </li>
+          <li class="channels__list-cannels__item">
+            <img src="./images/channels/inter.png" alt="inter" />
+          </li>
+          <li class="channels__list-cannels__item">
+            <img src="./images/channels/new.png" alt="new" />
+          </li>
+          <li class="channels__list-cannels__item">
+            <img src="./images/channels/ictv.png" alt="ictv" />
+          </li>
+          <li class="channels__list-cannels__item">
+            <img src="./images/channels/m1.png" alt="m1" />
+          </li>
+          <li class="channels__list-cannels__item">
+            <img src="./images/channels/2+2.png" alt="2+2" />
+          </li>
+        </ul>
+        <div class="channels__wrap-btn">
+          <button class="channels__wrap-btn__btn">
+            Показать все <img src="./images//channels/Arrow.svg" alt="arrow" />
+          </button>
+        </div>
+      </section>
+      <section class="devices">
+        <div class="devices__wrap">
+          <h2 class="devices__wrap__title">Смотрите на разных устройствах</h2>
+          <p class="devices__wrap__description">
+            Подключайте подписку FULL и смотрите любимые каналы на 5
+            устройствах, среди которых: телевизор, компьютер, планшет или
+            смартфон
+          </p>
+          <div class="devices__wrap__banner">
+            <picture>
+              <source
+                media="(min-width:1920px)"
+                srcset="./images/devices/devices-1920.png"
+              />
+
+              <source
+                media="(min-width:1440px)"
+                srcset="./images/devices/devices-1440.png"
+              />
+
+              <source
+                media="(min-width:990px)"
+                srcset="./images/devices/devices-990.png"
+              />
+
+              <source
+                media="(min-width:768px)"
+                srcset="./images/devices/devices-768.png"
+              />
+
+              <source
+                media="(min-width:375px)"
+                srcset="./images/devices/devices-375.png"
+              />
+
+              <img src="./images/devices/devices-320.png" alt="banner" />
+            </picture>
+          </div>
+          <button class="devices__wrap__btn">
+            Протестировать 7 дней бесплатно
+          </button>
+        </div>
+        <ul class="devices__tvs-list">
+          <li class="devices__tvs-list__item">
+            <picture>
+              <source
+                media="(min-width:1920px)"
+                srcset="./images/devices/tvs/smart-1920.svg"
+              />
+
+              <source
+                media="(min-width:1440px)"
+                srcset="./images/devices/tvs/smart-1440.svg"
+              />
+
+              <source
+                media="(min-width:990px)"
+                srcset="./images/devices/tvs/smart-990.svg"
+              />
+
+              <source
+                media="(min-width:768px)"
+                srcset="./images/devices/tvs/smart-768.svg"
+              />
+
+              <source
+                media="(min-width:375px)"
+                srcset="./images/devices/tvs/smart-375.svg"
+              />
+
+              <img src="./images/devices/tvs/smart-320.svg" alt="smart" />
+            </picture>
+          </li>
+          <li class="devices__tvs-list__item">
+            <picture>
+              <source
+                media="(min-width:1920px)"
+                srcset="./images/devices/tvs/ios-1920.svg"
+              />
+
+              <source
+                media="(min-width:1440px)"
+                srcset="./images/devices/tvs/ios-1440.svg"
+              />
+
+              <source
+                media="(min-width:990px)"
+                srcset="./images/devices/tvs/ios-990.svg"
+              />
+
+              <source
+                media="(min-width:768px)"
+                srcset="./images/devices/tvs/ios-768.svg"
+              />
+
+              <source
+                media="(min-width:375px)"
+                srcset="./images/devices/tvs/ios-375.svg"
+              />
+
+              <img src="./images/devices/tvs/ios-320.svg" alt="ios" />
+            </picture>
+          </li>
+          <li class="devices__tvs-list__item">
+            <picture>
+              <source
+                media="(min-width:1920px)"
+                srcset="./images/devices/tvs/android-1920.svg"
+              />
+
+              <source
+                media="(min-width:1440px)"
+                srcset="./images/devices/tvs/android-1440.svg"
+              />
+
+              <source
+                media="(min-width:990px)"
+                srcset="./images/devices/tvs/android-990.svg"
+              />
+
+              <source
+                media="(min-width:768px)"
+                srcset="./images/devices/tvs/android-768.svg"
+              />
+
+              <source
+                media="(min-width:375px)"
+                srcset="./images/devices/tvs/android-375.svg"
+              />
+
+              <img src="./images/devices/tvs/android-320.svg" alt="android" />
+            </picture>
+          </li>
+          <li class="devices__tvs-list__item">
+            <picture>
+              <source
+                media="(min-width:1920px)"
+                srcset="./images/devices/tvs/lg-1920.svg"
+              />
+
+              <source
+                media="(min-width:1440px)"
+                srcset="./images/devices/tvs/lg-1440.svg"
+              />
+
+              <source
+                media="(min-width:990px)"
+                srcset="./images/devices/tvs/lg-990.svg"
+              />
+
+              <source
+                media="(min-width:768px)"
+                srcset="./images/devices/tvs/lg-768.svg"
+              />
+
+              <source
+                media="(min-width:375px)"
+                srcset="./images/devices/tvs/lg-375.svg"
+              />
+
+              <img src="./images/devices/tvs/lg-320.svg" alt="lg" />
+            </picture>
+          </li>
+        </ul>
+      </section>
+      <section class="faq">
+        <h2 class="faq__title">Популярные вопросы</h2>
+        <div class="faq__wrap">
+          <ul class="faq__wrap__list">
+            <li class="faq__wrap__list__item active-faq">
+              <div class="faq__wrap__list__item__title">
+                <h6>Как подключить подписку OTTCLUB или продлить ее?</h6>
+
+                <img src="./images/faq/down.svg" alt="down" />
+              </div>
+              <p class="faq__wrap__list__item__text">
+                Какая необходима скорость соединения для стабильного просмотра
+                каналов? Какая необходима скорость соединения для стабильного
+                просмотра каналов?
+              </p>
+            </li>
+
+            <li class="faq__wrap__list__item">
+              <div class="faq__wrap__list__item__title">
+                <h6>Как смотреть одновременно на разных устройствах?</h6>
+                <img src="./images/faq/down.svg" alt="down" />
+              </div>
+            </li>
+            <li class="faq__wrap__list__item">
+              <div class="faq__wrap__list__item__title">
+                <h6>
+                  Какая скорость соединения необходима для просмотра каналов?
+                </h6>
+                <img src="./images/faq/down.svg" alt="down" />
+              </div>
+            </li>
+          </ul>
+          <ul class="faq__wrap__list">
+            <li class="faq__wrap__list__item">
+              <div class="faq__wrap__list__item__title">
+                <h6>Как смотреть на телевизоре Samsung?</h6>
+                <img src="./images/faq/down.svg" alt="down" />
+              </div>
+            </li>
+            <li class="faq__wrap__list__item">
+              <div class="faq__wrap__list__item__title">
+                <h6 class="faq__wrap__list__item__title">
+                  Как посмотреть передачу, которая была в эфире ранее?
+                </h6>
+                <img src="./images/faq/down.svg" alt="down" />
+              </div>
+            </li>
+            <li class="faq__wrap__list__item">
+              <div class="faq__wrap__list__item__title">
+                <h6>Как работает бесплатный тестовый период?</h6>
+                <img src="./images/faq/down.svg" alt="down" />
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__about">
+          <ul class="footer__about__first-list">
+            <li><a href="#">О нас</a></li>
+            <li><a href="#">Пользовательское соглашение</a></li>
+            <li><a href="#">Политика конфиденциальности</a></li>
+            <li><a href="#">ТВ-Каналам</a></li>
+          </ul>
+          <ul class="footer__about__second-list">
+            <li><a href="#">Проверка скорости</a></li>
+            <li><a href="#">Правила оформления подписки</a></li>
+          </ul>
+          <div class="footer__about__help">
+            <div>
+              <h6 class="footer__about__help__title">Помощь</h6>
+              <ul class="footer__about__help__list">
+                <li class="footer__about__help__list__item">
+                  <a href="tel:+442045772169">+442045772169 (Англия)</a>
+                </li>
+                <li class="footer__about__help__list__item">
+                  <a href="tel:+420255708953">+420255708953 (Европа)</a>
+                </li>
+                <li class="footer__about__help__list__item">
+                  <a href="tel:+97233751723">+97233751723 (Израиль)</a>
+                </li>
+                <li class="footer__about__help__list__item">
+                  <a href="mailto:support@ottclub.cc">support@ottclub.cc</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer__about__help__chat">
+              <h6 class="footer__about__help__chat__title">Чат-поддержка</h6>
+              <div class="footer__about__help__chat__block">
+                <a href="#" target="_blank">
+                  <picture>
+                    <source
+                      media="(min-width:1920px)"
+                      srcset="./images/footer/whatsapp-1920.svg"
+                    />
+
+                    <img
+                      src="./images/footer/whatsapp-320.svg"
+                      alt="whatsapp"
+                    />
+                  </picture>
+                </a>
+                <a href="#" target="_blank">
+                  <picture>
+                    <source
+                      media="(min-width:1920px)"
+                      srcset="./images/footer/telegram-1920.svg"
+                    />
+
+                    <img
+                      src="./images/footer/telegram-320.svg"
+                      alt="telegram"
+                    />
+                  </picture>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer__payment">
+          <ul class="footer__payment__list">
+            <li>
+              <a href="#">
+                <img src="./images/footer/logos_visa.svg" alt="visa" />
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="./images/footer/master-card.svg" alt="master-card" />
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="./images/footer/free-kassa.svg" alt="free-kassa" />
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="./images/footer/pay-sera.svg" alt="pay-sera" />
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="./images/footer/sepa.svg" alt="sepa" />
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__copyright">
+          <p class="footer__copyright__first">
+            <img src="./images/footer/copyright.svg" alt="copyright" />2021-2022
+            COMPANY NAME LTD
+          </p>
+          <p class="footer__copyright__second">Company number 1221514</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

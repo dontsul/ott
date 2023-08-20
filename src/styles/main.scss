@@ -1,0 +1,70 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap");
+
+body {
+  width: 100%;
+  font-family: "Inter", sans-serif;
+  color: var(--text);
+  background-image: url("../images/bg/320.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 100%;
+}
+
+@media (min-width: 375px) {
+  body {
+    background-image: url("../images/bg/375.png");
+  }
+}
+@media (min-width: 768px) {
+  body {
+    background-image: url("../images/bg/768.png");
+  }
+}
+
+@media (min-width: 990px) {
+  body {
+    background-image: url("../images/bg/990.png");
+  }
+}
+@media (min-width: 1440px) {
+  body {
+    background-image: url("../images/bg/1440.png");
+  }
+}
+@media (min-width: 1920px) {
+  body {
+    background-image: url("../images/bg/1920.png");
+  }
+}
+
+:root {
+  --primary-color: #fc3232;
+  --text: #ffffff;
+  --text-secondary: rgba(255, 255, 255, 0.9);
+}
+
+.container {
+  padding: 0 16px;
+}
+
+@media (min-width: 768px) {
+  .container {
+    padding: 0 40px;
+  }
+}
+@media (min-width: 990px) {
+  .container {
+    padding: 0 48px;
+  }
+}
+@media (min-width: 1440px) {
+  .container {
+    padding: 0 172px;
+  }
+}
+@media (min-width: 1920px) {
+  .container {
+    padding: 0 229px;
+  }
+}
