@@ -13,28 +13,30 @@ body {
 
 @media (min-width: 375px) {
   body {
-    background-image: url("../images/bg/375.png");
+    background-image: url("../images/bg/375.webp"), url("../images/bg/375.png");
   }
 }
 @media (min-width: 768px) {
   body {
-    background-image: url("../images/bg/768.png");
+    background-image: url("../images/bg/768.webp"), url("../images/bg/768.png");
   }
 }
 
 @media (min-width: 990px) {
   body {
-    background-image: url("../images/bg/990.png");
+    background-image: url("../images/bg/990.webp"), url("../images/bg/990.png");
   }
 }
 @media (min-width: 1440px) {
   body {
-    background-image: url("../images/bg/1440.png");
+    background-image: url("../images/bg/1440.webp"),
+      url("../images/bg/1440.png");
   }
 }
 @media (min-width: 1920px) {
   body {
-    background-image: url("../images/bg/1920.png");
+    background-image: url("../images/bg/1920.webp"),
+      url("../images/bg/1920.png");
   }
 }
 
