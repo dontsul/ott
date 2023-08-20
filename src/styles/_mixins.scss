@@ -1,0 +1,21 @@
+@mixin descr {
+  color: var(--text);
+  text-align: center;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+}
+@mixin title {
+  position: relative;
+  color: var(--text);
+  text-align: center;
+  font-size: 24px;
+  font-style: normal;
+}
+@mixin btn {
+  width: 100%;
+  border-radius: 5px;
+  background-color: var(--primary-color);
+  color: var(--text);
+  padding: 14px;
+}

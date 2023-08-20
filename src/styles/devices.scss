@@ -1,3 +1,5 @@
+@import "mixins";
+
 .devices {
   padding: 16px 0 17px 0;
 
@@ -6,11 +8,8 @@
     grid-template-columns: 1fr;
     margin-bottom: 34px;
     &__title {
-      color: var(--text);
-      text-align: center;
-      font-size: 24px;
-      font-style: normal;
-      font-weight: 500;
+      @include title;
+
       line-height: 130%; /* 31.2px */
       opacity: 0.9;
       margin-bottom: 16px;
@@ -18,15 +17,12 @@
     }
 
     &__description {
-      color: var(--text);
-      text-align: center;
-      font-size: 15px;
-      font-style: normal;
-      font-weight: 400;
-      line-height: 150%; /* 22.5px */
+      @include descr;
+      font-weight: 500;
       opacity: 0.8;
       margin-bottom: 5px;
       order: 2;
+      line-height: 150%; /* 22.5px */
     }
 
     &__banner {
@@ -44,10 +40,8 @@
     }
 
     &__btn {
-      border-radius: 5px;
-      background: var(--primary-color);
-      padding: 14px;
-      color: var(--text);
+      @include btn;
+
       font-size: 15px;
       font-style: normal;
       font-weight: 500;
